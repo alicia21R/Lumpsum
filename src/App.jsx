@@ -1,17 +1,32 @@
-import { useState } from 'react'
-
-import './App.css'
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { ROUTES } from "./routes/routes";
+import Dashboard from "./pages/Dashboard";
+import Login from "./pages/Login";
+import NotFound from "./pages/NotFound";
 
 function App() {
- 
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <Login />,
+    },
 
-  return (
-    <>
-     <div className="text-3xl font-bold underline">
-      <p>Back at it again</p>
-      </div>
-    </>
-  )
+    {
+      path: ROUTES.DASHBOARD,
+      element: (
+        // <ProtectedRoute>
+        <Dashboard />
+        // </ProtectedRoute>
+      ),
+    },
+
+    {
+      path: "*",
+      element: <NotFound />,
+    },
+  ]);
+
+  return <RouterProvider router={router} />;
 }
 
-export default App
+export default App;
