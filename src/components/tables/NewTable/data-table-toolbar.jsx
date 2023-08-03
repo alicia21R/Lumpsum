@@ -1,7 +1,6 @@
-import { Table } from "@tanstack/react-table";
 import { X } from "lucide-react";
 
-import { Button } from "../../ui/button";
+import { Button } from "../../buttons/Button";
 import { Input } from "../../ui/input";
 import { DataTableViewOptions } from "./data-table-view-options";
 import { DataTableFacetedFilter } from "./data-table-faceted-filter";

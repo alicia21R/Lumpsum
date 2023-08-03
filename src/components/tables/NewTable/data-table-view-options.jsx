@@ -1,7 +1,6 @@
 "use client";
 
 import { DropdownMenuTrigger } from "@radix-ui/react-dropdown-menu";
-import { Table } from "@tanstack/react-table";
 import { SlidersHorizontal } from "lucide-react";
 
 import { Button } from "../../ui/button";

@@ -1,7 +1,7 @@
 import { Row } from "@tanstack/react-table";
 import { MoreHorizontal, Pen, Trash } from "lucide-react";
 
-import { Button } from "../../../ui/button";
+import { Button } from "../../ui/button";
 import {
   DropdownMenu,
   DropdownMenuContent,
