@@ -4,72 +4,85 @@ import { DataTableRowActions } from "../tables/NewTable/data-table-row-actions";
 
 export const columns = [
   {
-    accessorKey: "student_no",
+    accessorKey: "invoice_id",
     header: ({ column }) => (
-      <DataTableColumnHeader column={column} title="Student No." />
+      <DataTableColumnHeader column={column} title="Invoice ID." />
     ),
     cell: ({ row }) => {
       const data = row.original;
-      return <div className="flex space-x-2">{row.getValue("student_no")}</div>;
+      return <div className="flex space-x-2">{row.getValue("invoice_id")}</div>;
     },
   },
   {
-    accessorKey: "first_name",
+    accessorKey: "product",
     header: ({ column }) => (
-      <DataTableColumnHeader column={column} title="First Name" />
+      <DataTableColumnHeader column={column} title="Product" />
     ),
     cell: ({ row }) => {
       return (
         <div className="flex space-x-2">
           <span className="max-w-[500px] truncate text-gray-500">
-            {row.getValue("first_name")}
+            {row.getValue("product")}
           </span>
         </div>
       );
     },
   },
   {
-    accessorKey: "last_name",
+    accessorKey: "status",
     header: ({ column }) => (
-      <DataTableColumnHeader column={column} title="Other Name(s)" />
+      <DataTableColumnHeader column={column} title="Status" />
     ),
     cell: ({ row }) => {
       return (
         <div className="flex space-x-2">
           <span className="max-w-[500px] truncate text-gray-500">
-            {row.original.other_name
-              ? row.original.other_name + " " + row.getValue("last_name")
-              : row.getValue("last_name")}
+            {row.getValue("status")}
           </span>
         </div>
       );
     },
   },
   {
-    accessorKey: "school_class_id",
+    accessorKey: "amount",
     header: ({ column }) => (
-      <DataTableColumnHeader column={column} title="Class Name" />
+      <DataTableColumnHeader column={column} title="Amount" />
     ),
     cell: ({ row }) => {
       return (
         <div className="flex space-x-2">
           <span className="max-w-[500px] truncate text-gray-500">
-            {row.original.class_name}
+            {row.original.amount}
           </span>
         </div>
       );
     },
   },
   {
-    accessorKey: "fees_balance",
+    accessorKey: "balance",
     header: ({ column }) => (
-      <DataTableColumnHeader column={column} title="Balance (shs.)" />
+      <DataTableColumnHeader column={column} title="Balance" />
     ),
     cell: ({ row }) => {
       return (
         <div className="flex space-x-2">
           <span className="max-w-[500px] truncate text-gray-500">
-            {Number(row.getValue("fees_balance")).toLocaleString()}
+            {Number(row.getValue("balance")).toLocaleString()}
+          </span>
+        </div>
+      );
+    },
+  },
+  {
+    accessorKey: "date",
+    header: ({ column }) => (
+      <DataTableColumnHeader column={column} title="Date" />
+    ),
+    cell: ({ row }) => {
+      return (
+        <div className="flex space-x-2">
+          <span className="max-w-[500px] truncate text-gray-500">
+            {row.getValue("date")}
           </span>
         </div>
       );

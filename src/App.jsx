@@ -3,6 +3,7 @@ import { ROUTES } from "./routes/routes";
 import Dashboard from "./pages/Dashboard";
 import Login from "./pages/Login";
 import NotFound from "./pages/NotFound";
+import Product from "./pages/Product";
 
 function App() {
   const router = createBrowserRouter([
@@ -16,6 +17,14 @@ function App() {
       element: (
         // <ProtectedRoute>
         <Dashboard />
+        // </ProtectedRoute>
+      ),
+    },
+    {
+      path: ROUTES.PRODUCTS,
+      element: (
+        // <ProtectedRoute>
+        <Product />
         // </ProtectedRoute>
       ),
     },
