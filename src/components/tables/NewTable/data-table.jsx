@@ -23,12 +23,10 @@ import { DataTablePagination } from "./data-table-pagination";
 
 export function DataTable({ columns, data, Toolbar = DataTableToolbar }) {
   const [rowSelection, setRowSelection] = React.useState({});
-  const [columnVisibility, setColumnVisibility] =
-    React.useState < VisibilityState > {};
-  const [columnFilters, setColumnFilters] =
-    React.useState < ColumnFiltersState > [];
+  const [columnVisibility, setColumnVisibility] = React.useState({});
+  const [columnFilters, setColumnFilters] = React.useState([]);
 
-  const [sorting, setSorting] = React.useState < SortingState > [];
+  const [sorting, setSorting] = React.useState([]);
 
   const table = useReactTable({
     data,
@@ -54,7 +52,7 @@ export function DataTable({ columns, data, Toolbar = DataTableToolbar }) {
 
   return (
     <div className="space-y-4">
-      <Toolbar table={table} />
+      {/* <Toolbar table={table} /> */}
       <div className="rounded-md border">
         <Table>
           <TableHeader>

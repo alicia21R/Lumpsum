@@ -24,7 +24,7 @@ const SearchInput = () => {
       <input
         type="search"
         name="q"
-        className="py-2 text-sm text-white bg-container rounded-md pl-10 focus:outline-none focus:bg-white focus:text-container w-full"
+        className="py-2 text-sm bg-container rounded-md pl-10 focus:outline-none  w-full"
         placeholder="Search Receipt..."
         autocomplete="off"
       />

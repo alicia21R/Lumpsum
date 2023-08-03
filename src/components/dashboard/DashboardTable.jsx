@@ -6,10 +6,10 @@ import { columns } from "./tableColumns";
 const DashboardTable = () => {
   return (
     <div className="mt-10 rounded-lg bg-white p-6 shadow">
-      <div>
+      <div className="flex flex-col gap-4">
         <SearchInput />
 
-        <DataTable columns={columns} data={students?.data || []} />
+        <DataTable columns={columns} data={[]} />
       </div>
     </div>
   );
