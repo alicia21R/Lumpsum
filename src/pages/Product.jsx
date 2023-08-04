@@ -12,7 +12,7 @@ const Product = () => {
         </div>
 
         <div className="grid grid-cols-3 gap-3 place-content-start mt-5">
-          <div className="col-span-2 grid grid-cols-2 gap-3">
+          <div className="col-span-2 grid grid-cols-2 gap-5">
             {new Array(4).fill(0).map((index) => (
               <ProductCard key={index} />
             ))}
