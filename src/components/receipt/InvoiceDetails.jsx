@@ -25,7 +25,8 @@ const InvoiceDetails = () => {
             }}
           >
             <SelectTrigger className="h-10 bg-select w-40">
-              <SelectValue placeholder={"Payer's Name"} />
+              {/* <SelectValue placeholder={"Payer's Name"} /> */}
+              <p>Cash</p>
             </SelectTrigger>
             <SelectContent side="bottom">
               {[10, 20, 30, 40, 50].map((pageSize) => (
@@ -46,7 +47,8 @@ const InvoiceDetails = () => {
             }}
           >
             <SelectTrigger className="h-10 bg-select w-40">
-              <SelectValue placeholder={"Payer's Name"} />
+              {/* <SelectValue placeholder={"Payer's Name"} /> */}
+              <p>Invoice No</p>
             </SelectTrigger>
             <SelectContent side="bottom">
               {[10, 20, 30, 40, 50].map((pageSize) => (

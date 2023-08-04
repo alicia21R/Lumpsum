@@ -9,6 +9,7 @@ import {
   LogOut,
 } from "lucide-react";
 import MyNavLink from "../components/navigation/NavLink";
+import { ROUTES } from "../routes/routes";
 
 const Sidebar = () => {
   return (
@@ -20,7 +21,11 @@ const Sidebar = () => {
 
       <div className="flex flex-col justify-between  h-[88vh]">
         <ul className="mt-5 space-y-2">
-          <MyNavLink to={""} label={"Dashboard"} icon={<Home size={16} />} />
+          <MyNavLink
+            to={ROUTES.DASHBOARD}
+            label={"Dashboard"}
+            icon={<Home size={16} />}
+          />
           <MyNavLink
             to={""}
             label={"Accounting"}
@@ -32,7 +37,7 @@ const Sidebar = () => {
               },
               {
                 label: "Reports & Statements",
-                to: "",
+                to: ROUTES.REPORTSTAMENT,
               },
               {
                 label: "Invoice",
@@ -40,7 +45,7 @@ const Sidebar = () => {
               },
               {
                 label: "Receipts",
-                to: "",
+                to: ROUTES.RECEIPTS,
               },
             ]}
           />
@@ -60,7 +65,7 @@ const Sidebar = () => {
               },
               {
                 label: "Products",
-                to: "",
+                to: ROUTES.PRODUCTS,
               },
             ]}
           />

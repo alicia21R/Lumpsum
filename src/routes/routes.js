@@ -3,5 +3,6 @@ export const ROUTES = {
     FORGOTPASSWORD: '/forgot-password',
     DASHBOARD: '/dashboard',
     PRODUCTS: '/products',
-    RECEIPTS: '/receipts'
+    RECEIPTS: '/receipts',
+    REPORTSTAMENT: '/reports',
 }

@@ -21,7 +21,8 @@ const PayerInformation = () => {
         }}
       >
         <SelectTrigger className="h-10 bg-select ">
-          <SelectValue placeholder={"Payer's Name"} />
+          {/* <SelectValue placeholder={"Payer's Name"} /> */}
+          <p> Payer's Name</p>
         </SelectTrigger>
         <SelectContent side="bottom">
           {[10, 20, 30, 40, 50].map((pageSize) => (

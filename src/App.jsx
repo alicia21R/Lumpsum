@@ -5,6 +5,7 @@ import Login from "./pages/Login";
 import NotFound from "./pages/NotFound";
 import Product from "./pages/Product";
 import Receipts from "./pages/Receipts";
+import ReportsStatement from "./pages/ReportsStatement";
 
 function App() {
   const router = createBrowserRouter([
@@ -34,6 +35,15 @@ function App() {
       element: (
         // <ProtectedRoute>
         <Receipts />
+        // </ProtectedRoute>
+      ),
+    },
+
+    {
+      path: ROUTES.REPORTSTAMENT,
+      element: (
+        // <ProtectedRoute>
+        <ReportsStatement />
         // </ProtectedRoute>
       ),
     },
